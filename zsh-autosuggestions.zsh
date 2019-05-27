@@ -109,6 +109,8 @@ typeset -g ZSH_AUTOSUGGEST_ORIGINAL_WIDGET_PREFIX=autosuggest-orig-
 		which-command
 		yank
 		yank-pop
+		zle-isearch-update
+		zle-keymap-select
 	)
 }
 
@@ -197,7 +199,6 @@ _zsh_autosuggest_bind_widgets() {
 	ignore_widgets=(
 		.\*
 		_\*
-		zle-\*
 		autosuggest-\*
 		$ZSH_AUTOSUGGEST_ORIGINAL_WIDGET_PREFIX\*
 		$ZSH_AUTOSUGGEST_IGNORE_WIDGETS
